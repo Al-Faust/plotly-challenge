@@ -1,5 +1,5 @@
 function graphs(names) {
-    d3.json("samples.json").then ((loadData) => {
+    d3.json("StarterCode/samples.json").then ((loadData) => {
         var metaData = loadData.metadata
         //check data is pulling correctly
         //console.log(metaData);
@@ -64,7 +64,7 @@ function graphs(names) {
 //dropdown menu
 function parseData() {
     var dropDown = d3.select("#selDataset")
-    d3.json("samples.json").then ((loadData) =>{
+    d3.json("StarterCode/samples.json").then ((loadData) =>{
         var names = loadData.names
         console.log(names);
         names.forEach((bacteria) =>{
